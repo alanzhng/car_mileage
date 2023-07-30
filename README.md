@@ -12,7 +12,7 @@ The visual structure of the narrative visualization is the familiar slide show s
 
 # Scenes
 
-There are 3 scenes: an comparison of car makes and their mileage, a distribution of fuel types and their average highway MPG, and an exploration of the relationship between engine cylinders and city MPG. The scenes are ordered in order of relevance, starting with the broad aspect of car makes and ending with the specific aspect of engine cylinder count.
+There are 3 scenes: an comparison of car makes and their mileage, a distribution of fuel types and their average highway MPG, and the relationship between engine cylinders and city MPG. The scenes are ordered in order of relevance, starting with the broad aspect of car makes and ending with the specific aspect of engine cylinder count.
 
 # Annotations
 
@@ -20,7 +20,7 @@ Annotations in the narrative visualization all provide vital information, with d
 
 # Parameters
 
-The main parameters in the narrative visualization are the state variables that control which scene is currently displayed. This was done in JavaScript and various functions such as showSlide, nextSlide, and previousSlide. Each slide calls a specific function that renders the appropriate scene.
+The main parameters in the narrative visualization are the state variables that control which scene is currently displayed. This was done in JavaScript and represented by various functions such as currentSlide, showSlide, nextSlide, and previousSlide. Each slide calls a specific function that renders the appropriate scene.
 
 # Triggers
 
