@@ -24,5 +24,5 @@ The main parameters in the narrative visualization are the state variables that 
 
 # Triggers
 
-User events and callbacks such as mouse hovering, clicking, or button presses are used to implement triggers. When received accordingly, these triggers change the visualization based on the specified action. One example of this is moving to the next slide when the user presses the right arrow key.
+User events and callbacks such as mouse hovering, clicking, or button presses are used to implement triggers. When received accordingly, these triggers change the visualization based on the specified action. One example of this is moving to the next slide when the user presses the right arrow key. Instructions on all slide inform the user of the triggers available to them.
 
