@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Car Mileage</title>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="slideshow">
+        <!-- Slide 0: Welcome Screen -->
+        <div class="slide">
+            <h1>Car Mileage</h1>
+            <p>Examining the effects of various aspects of a car on its mileage through an interactive slideshow. Data
+                from the https://flunky.github.io/cars2017.csv dataset.</p>
+            <p>Use your arrow keys or click the arrows on your
+                screen to move between slides.</p>
+        </div>
+
+        <!-- Slide 1: Bar Chart -->
+        <div class="slide" id="chart-slide">
+            <h2 class="chart-description">How do various car makes differ in mileage per gallon?</h2>
+            <p>Different car brands are known to be more or less efficient in terms of mileage.</p>
+            <p class="chart-description">Use the toggle button to switch between average city MPG and average
+                highway
+                MPG. Hover over bars to see the specific make.</p>
+            <svg id="chart"></svg>
+            <div class="toggle-button">
+                <button onclick="toggleData()">Toggle Data</button>
+            </div>
+        </div>
+
+        <!-- Slide 2: Pie Chart -->
+        <div class="slide" id="pie-chart-slide">
+            <h2 class="chart-description">How do fuel types differ in their highway mileage per gallon?</h2>
+            <p>Different fuels have distinct energy efficiencies and combustion characteristics that impact their
+                mileage.</p>
+            <p class="chart-description">Hover over a specific fuel type to view the average highway MPG.</p>
+            <svg id="pie-chart"></svg>
+            <div id="tooltip"
+                style="display: none; position: absolute; padding: 8px; background-color: rgba(0, 0, 0, 0.8); color: #fff;">
+                <span class="fuel-type" style="font-weight: bold;"></span><br>
+                Count: <span class="count"></span>
+            </div>
+        </div>
+
+        <!-- Slide 3: Scatter Plot -->
+        <div class="slide" id="scatter-plot-slide">
+            <h2 class="chart-description">What's the relationship between engine cylinder count and city mileage per
+                gallon?</h2>
+            <p>Engine cylinders are the individual chambers within an engine where air and fuel are
+                mixed and ignited to produce power for a vehicle.</p>
+            <p class="chart-description">Click on a point/axis title. Drag your mouse to pan and scroll to zoom in or
+                out.
+            </p>
+            <div id="scatter-plot-container">
+                <svg id="scatter-plot"></svg>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Left Arrow Button -->
+    <div class="arrow left" onclick="prevSlide()">&#10094;</div>
+
+    <!-- Right Arrow Button -->
+    <div class="arrow right" onclick="nextSlide()">&#10095;</div>
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
